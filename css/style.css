@@ -46,7 +46,7 @@ body{
 }
 
   #showcase {
-      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/showcase.png') no-repeat center center/cover;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/showcase.jpg') no-repeat center center/cover;
       min-height: 50px;
       color: white;
       display: flex;
@@ -844,21 +844,6 @@ color: green;
 }
 
  
-    nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #ff5e57;
-    }
     
     .Section {
       padding: 4rem 2rem;
