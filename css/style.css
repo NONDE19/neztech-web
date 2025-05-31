@@ -175,24 +175,9 @@ nav a.active {
 }
 
   /* Showcase */
-  #showcase{
-    min-height:50px;
-    background:url('../img/showcase.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align:center;
-    color:#ffffff;
-  }
-  
-  #showcase h1{
-    margin-top:40px;
-    font-size:60px;
-    margin-bottom:8px;
-    font-weight: 80px;
-  }
-  
+
   #showcase p{
-    font-size:50px;
+    font-size:35px;
     color:#ffffff;
     font-weight: 50px;
   }
@@ -409,17 +394,7 @@ nav a.active {
   }
   
 
-  #faq {
-    background-color: #26a5b6;
-    padding: 20px 0;
-  }
-  
-  #faq h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: rgb(0, 63, 114);
-  }
-  
+
   .faq-item {
     margin: 15px 0;
     padding: 10px;
@@ -429,25 +404,7 @@ nav a.active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .faq-item h3 {
-    color: #0c2981;
-    margin-bottom: 10px;
-  }
-  
-  .faq-item p {
-    margin: 0;
-    color: #000000f8;
-  }
-  
-  .faq-item a {
-    color: #1e2e44;
-    text-decoration: underline;
-  }
-  
-  .faq-item a:hover {
-    text-decoration: none;
-  }
-
+ 
   /* Navigation Menu */
 .menu {
   list-style: none;
@@ -595,68 +552,12 @@ main a:hover {
 
 
 
-/* Footer Styles */
-footer {
-  background-color: #35424a;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-footer a {
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-footer a:hover {
-  text-decoration: none;
-  color: orange;
-}
-
-footer {
-  margin-top: auto;
-}
-
-  footer p{
-color:#ffffff;
-  }
 
 /* Make sure it adapts to screen size */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-.IT-portifolio {
-  display: grid;
-  grid-template-columns: 1fr; /* Single column by default (mobile view) */
-  gap: 10px;
-}
-
-.IT-portfolio {
-  background-color: #24a182;
-  color: rgb(255, 255, 255);
-  padding: 60px 30px;
-    margin: 20px 0px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-/* Responsive grid for tablets and desktops */
-@media (min-width: 600px) {
-  .IT-portfolio {
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-  }
-}
-
-@media (min-width: 700px) {
-  .IT-portfolio {
-    grid-template-columns: repeat(4, 1fr); /* Four columns */
-  }
 }
 
 
@@ -839,7 +740,7 @@ form button:hover {
 /* Contact Section */
 #contact {
   padding: 30px 20px;
-  background-color: #f1f1f1;
+  background-color: #f0fdff;
   text-align: center;
 }
 
@@ -883,6 +784,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+  color: #ff7402;
 }
 
 #formSuccessMsg {
@@ -900,4 +802,94 @@ display:none;
 color: green;
  margin-top: 15px;
  text-align: center;
+}
+
+ 
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ff5e57;
+    }
+    #showcase {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/img/showcase.png') no-repeat center center/cover;
+      height: 650px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    #showcase h1 {
+      font-size: 4rem;
+      font-weight: 80px;
+    }
+    .Section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .Section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: rgb(255, 255, 255);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .Card {
+      background: rgb(0, 139, 231);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+
+    
+    .faq .faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+
+}
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: #01227e;
+}
+.faq-answer {
+  display: none;
+  padding: 0 1rem 1rem 1rem;
+  color: #000000;
+}
+.faq-item.active .faq-answer {
+  display: block;
 }
