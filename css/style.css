@@ -2,6 +2,8 @@ html, body {
   height: 100%;
   margin: 0%;
   width:100%;
+  padding:0;
+  margin:0;
 }
 
 body {
@@ -25,12 +27,6 @@ body{
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .nav {
@@ -588,10 +584,6 @@ main a:hover {
   color: #000000;
 }
 
-
-
-
-
 /* Make sure it adapts to screen size */
 * {
   box-sizing: border-box;
@@ -600,19 +592,15 @@ main a:hover {
 }
 
 
-
-/* Reset some basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Container */
 .container {
   width: 90%;
   max-width: 1100px;
   margin: auto;
+}
+.container, .grid{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Header */
@@ -773,7 +761,8 @@ form button {
 }
 
 form button:hover {
-  background-color: #444;
+  background-color:#04c4ff;
+  color:rgb(0, 0, 0) ;
 }
 
 /* Contact Section */
@@ -857,9 +846,14 @@ color: green;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       margin-top: 2rem;
+    }
+    @media(max-width:768px){
+      .grid{
+        grid-template-columns: 1fr;
+      }
     }
     .card {
       background: rgb(255, 255, 255);
@@ -903,4 +897,15 @@ color: green;
 }
 .faq-item.active .faq-answer {
   display: block;
+}
+*{
+  box-sizing: border-box;
+}
+
+
+.wrapper{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
